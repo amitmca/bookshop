@@ -11,12 +11,15 @@ import java.util.Date;
 @ToString
 @AllArgsConstructor
 @MappedSuperclass
-@SequenceGenerator(allocationSize = 1, name = "SEQ", sequenceName = "GEN_BASE_ID")
+@NoArgsConstructor
 public abstract class BaseOb implements Serializable{
 
-    @Id
+    private static final long serialVersionUID = -6442818871656762337L;
+
+	@Id
     @Column(name = "ID")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator= "SEQ")
+    @SequenceGenerator(name = "my_entity_gen", sequenceName = "my_entity_id_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "my_entity_gen")
     private Long id;
     
     @Column(name = "TECHDATE",columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")

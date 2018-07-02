@@ -1,7 +1,7 @@
 package com.tkomoszeski.bookshop.user.service;
 
 import com.tkomoszeski.bookshop.user.dto.BookShopUserPrincipal;
-import com.tkomoszeski.bookshop.user.dto.UserDto;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

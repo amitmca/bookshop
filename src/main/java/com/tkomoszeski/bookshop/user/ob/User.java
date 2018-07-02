@@ -12,9 +12,8 @@ import lombok.Data;
 @Table(name="users")
 public class User extends BaseOb{
 
-	private static final long serialVersionUID = 747455698650057491L;
-
-    private String eamil;
+    private static final long serialVersionUID = 8870469385772054342L;
+	private String eamil;
     private String password;
     private String username;
     private String fullName;

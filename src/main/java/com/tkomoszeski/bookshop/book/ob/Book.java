@@ -18,10 +18,10 @@ import lombok.Data;
 @Data
 @Table(name = "books")
 public class Book extends BaseOb {
-
-    private static final long serialVersionUID = 1448228395362232378L;
     
-    @ManyToMany(
+    private static final long serialVersionUID = 3613447239137503788L;
+
+	@ManyToMany(
         fetch = FetchType.EAGER, 
         cascade = {CascadeType.PERSIST,CascadeType.MERGE}
     )

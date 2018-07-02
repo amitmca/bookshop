@@ -14,7 +14,8 @@ import lombok.Setter;
 @Setter
 public class BookShopUserPrincipal implements UserDetails {
 
-    private String role;
+    private static final long serialVersionUID = 7461359703825435274L;
+	private String role;
     private String username;
     private String password;
     private String fullName;

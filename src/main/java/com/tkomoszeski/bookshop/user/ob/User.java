@@ -16,7 +16,6 @@ public class User extends BaseOb{
 
     private String eamil;
     private String password;
-    private String userName;
-    private String firstName;
-    private String lastName;
+    private String username;
+    private String fullName;
 }

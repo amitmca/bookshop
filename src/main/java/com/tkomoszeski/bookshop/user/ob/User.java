@@ -6,9 +6,11 @@ import javax.persistence.Table;
 import com.tkomoszeski.bookshop.base.ob.BaseOb;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Data
+@EqualsAndHashCode(callSuper=true)
 @Table(name="users")
 public class User extends BaseOb{
 
@@ -16,5 +18,5 @@ public class User extends BaseOb{
 	private String eamil;
     private String password;
     private String username;
-    private String fullName;
+    private String fullname;
 }

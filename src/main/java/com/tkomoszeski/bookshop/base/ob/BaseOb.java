@@ -5,13 +5,8 @@ import javax.persistence.*;
 import lombok.*;
 import java.util.Date;
 
-@Getter
-@Setter
-@EqualsAndHashCode
-@ToString
-@AllArgsConstructor
+@Data
 @MappedSuperclass
-@NoArgsConstructor
 public abstract class BaseOb implements Serializable{
 
     private static final long serialVersionUID = -6442818871656762337L;

@@ -18,23 +18,23 @@ public class BookShopUserPrincipal implements UserDetails {
 	private String role;
     private String username;
     private String password;
-    private String fullName;
-    private boolean active;
-    private boolean expired;
-    private boolean locked;
-    private boolean credentialExpired;
+    // private String fullname;
+    // private boolean active;
+    // private boolean expired;
+    // private boolean locked;
+    // private boolean credentialExpired;
 
-    public BookShopUserPrincipal(String username,String password,String fullName){
+    public BookShopUserPrincipal(String username,String password,String fullname){
         this.username = username;
         this.password = password;
-        this.fullName = fullName;
+        //this.fullname = fullname;
     }
 
     public BookShopUserPrincipal(User user)
     {
 		this.username = user.getUsername();
 		this.password = user.getPassword();
-		this.fullName = user.getFullName();
+		//this.fullname = user.getFullname();
 		
     }
 

@@ -11,11 +11,12 @@ import com.tkomoszeski.bookshop.base.ob.BaseOb;
 import java.lang.Integer;
 
 import lombok.Data;
-
+import lombok.EqualsAndHashCode;
 
 
 @Entity
 @Data
+@EqualsAndHashCode(callSuper=true)
 @Table(name = "books")
 public class Book extends BaseOb {
     

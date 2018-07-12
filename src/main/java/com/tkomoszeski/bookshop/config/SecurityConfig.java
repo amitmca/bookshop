@@ -1,4 +1,4 @@
-package com.tkomoszeski.bookshop;
+package com.tkomoszeski.bookshop.config;
 
 import com.tkomoszeski.bookshop.user.service.AppUserDetailsService;
 
@@ -34,12 +34,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
      @Override
      protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-          .antMatchers("/index.html", "/", "/home","/logout", "/login","/favicon.ico","/*.js","/*.js.map").permitAll()
-          .anyRequest().authenticated()
-          .and().logout().permitAll().logoutRequestMatcher(new AntPathRequestMatcher("/logout","POST"))
-          .and().httpBasic().and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
-          .and().csrf().disable();
+        // http.authorizeRequests()
+        //   .antMatchers("/index.html", "/", "/home","/logout", "/login","/favicon.ico","/*.js","/*.js.map").permitAll()
+        //   .anyRequest().authenticated()
+        //   .and().logout().permitAll().logoutRequestMatcher(new AntPathRequestMatcher("/logout","POST"))
+        //   .and().httpBasic().and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
+        //   .and().csrf().disable();
      
     }
 

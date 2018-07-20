@@ -11,5 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "api/books")
 public class BookController{
             
+    @RequestMapping("hello")
+    public String hello()
+    {
+        return "Hello World! Rest Api is working!";
+    }
    
 }
